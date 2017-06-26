@@ -26,6 +26,8 @@ RUN conda config --add channels r && \
     'r-irkernel=0.7*' \
     'r-ggplot2=2.2*' \
     'r-rcurl=1.95*' && conda clean -tipsy
+# Tensorflow
+RUN pip3 install tensorflow
 
 ## Apache Toree kernel
 #RUN pip --no-cache-dir install https://dist.apache.org/repos/dist/dev/incubator/toree/0.2.0/snapshots/dev1/toree-pip/toree-0.2.0.dev1.tar.gz
