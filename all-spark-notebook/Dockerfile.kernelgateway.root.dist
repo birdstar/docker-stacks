@@ -67,4 +67,4 @@ RUN pip install jupyter_kernel_gateway==1.1.2
 
 # run kernel gateway on container start, not notebook server
 EXPOSE 9999
-CMD ["jupyter", "kernelgateway", "--KernelGatewayApp.ip=0.0.0.0", "--KernelGatewayApp.port=9999"]
+CMD ["jupyter", "kernelgateway", "--KernelGatewayApp.ip=0.0.0.0", "--KernelGatewayApp.port=9999", "--JupyterWebsocketPersonality.list_kernels=True"]

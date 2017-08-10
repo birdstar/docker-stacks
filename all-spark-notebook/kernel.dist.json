@@ -13,5 +13,5 @@
         "SPARK_HOME": "/usr/local/spark",
         "PYTHON_EXEC": "python"
     },
-    "display_name": "mokshaspark2.0.2_scala"
+    "display_name": "mokshaspark2.1.0_scala"
 }
