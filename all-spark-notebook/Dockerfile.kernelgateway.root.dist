@@ -51,7 +51,8 @@ COPY toree-assembly-0.2.0.dev1-incubating-SNAPSHOT.jar /opt/conda/share/jupyter/
 COPY kernel.dist.json /opt/conda/share/jupyter/kernels/apache_toree_scala/kernel.json
 
 # Replace spark to 2.0.2
-ADD spark /usr/local/
+COPY spark /usr/local/spark202
+ENV SPARK_HOME /usr/local/spark202
 
 
 # Spylon-kernel
