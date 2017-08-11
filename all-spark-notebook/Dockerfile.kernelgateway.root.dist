@@ -50,6 +50,9 @@ RUN jupyter toree install --sys-prefix
 COPY toree-assembly-0.2.0.dev1-incubating-SNAPSHOT.jar /opt/conda/share/jupyter/kernels/mokshaspark2.0.2_scala/lib/
 COPY kernel.dist.json /opt/conda/share/jupyter/kernels/apache_toree_scala/kernel.json
 
+# Replace spark to 2.0.2
+ADD spark /usr/local/
+
 
 # Spylon-kernel
 # RUN conda install --quiet --yes 'spylon-kernel=0.2*'
