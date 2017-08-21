@@ -55,7 +55,7 @@ COPY spark /usr/local/spark202
 ENV SPARK_HOME /usr/local/spark202
 
 # Create directory /user-home
-RUN mkdir -p /user-home/
+RUN mkdir -p /user-home/ \
     chmod -R 777 /user-home/
 
 
