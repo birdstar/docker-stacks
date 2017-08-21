@@ -45,6 +45,7 @@ RUN pip install "git+https://github.com/birdstar/kernel_gateway_demos.git#egg=nb
 
 # Install brunel
 RUN pip2 install brunel --user \
+    mkdir -p /opt/conda/envs/python2/share/jupyter/nbextensions \
     cp -r  /opt/conda/envs/python2/lib/python2.7/site-packages/brunel/brunel_ext/ /opt/conda/envs/python2/share/jupyter/nbextensions
 
 
