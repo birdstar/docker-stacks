@@ -1,0 +1,25 @@
+FROM cuericlee/all-spark-notebook-livy-tensorflow-xgboost:20170727
+
+MAINTAINER ML Project
+
+USER root
+
+RUN pip install urllib3==1.21.1
+RUN pip install certifi==2017.4.17
+RUN pip2 install brunel==2.3
+
+RUN pip2 install MLP
+RUN easy_install -U six
+RUN pip install statsmodels
+RUN pip install seaborn
+RUN pip install Keras==2.0.6
+RUN pip2 install MLP
+RUN easy_install -U six
+RUN pip2 install statsmodels
+RUN pip2 install seaborn
+RUN pip2 install  https://storage.googleapis.com/tensorflow/linux/cpu/debian/jessie/tensorflow-0.10.0rc0-cp27-none-linux_x86_64.whl
+RUN pip2 install Keras==1.1.0
+
+EXPOSE 9999
+#CMD ["jupyter", "kernelgateway", "--KernelGatewayApp.ip=0.0.0.0", "--KernelGatewayApp.port=9999", "--JupyterWebsocketPersonality.list_kernels=True", "--KernelGatewayApp.allow_origin=‘*’"]
+CMD ["jupyter", "kernelgateway", "--KernelGatewayApp.ip=0.0.0.0", "--KernelGatewayApp.port=9999", "--JupyterWebsocketPersonality.list_kernels=True"]
