@@ -43,6 +43,11 @@ RUN python -m spylon_kernel install --sys-prefix
 RUN pip install "git+https://github.com/birdstar/kernel_gateway_demos.git#egg=nb2kg&subdirectory=nb2kg" && \
     jupyter serverextension enable --py nb2kg --sys-prefix
 
+# Install brunel
+RUN pip2 install brunel --user \
+    cp -r  /opt/conda/envs/python2/lib/python2.7/site-packages/brunel/brunel_ext/ /opt/conda/envs/python2/share/jupyter/nbextensions
+
+
 # Run with remote kernel managers
 CMD ["jupyter", "notebook", \
      "--NotebookApp.ip=0.0.0.0", \

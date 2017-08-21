@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8639ad57-8028-482c-b58a-81ee6d544e3c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/all-spark-notebook/kernel.dist.json" afterPath="$PROJECT_DIR$/all-spark-notebook/kernel.dist.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/all-spark-notebook/Dockerfile.notebook" afterPath="$PROJECT_DIR$/all-spark-notebook/Dockerfile.notebook" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,18 +20,8 @@
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pyspark-notebook/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
+            <state relative-caret-position="480">
               <caret line="32" column="52" lean-forward="false" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dockerfile.kernelgateway.root" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="109" lean-forward="false" selection-start-line="49" selection-start-column="88" selection-end-line="49" selection-end-column="109" />
               <folding />
             </state>
           </provider>
@@ -40,8 +30,28 @@
       <file leaf-file-name="Dockerfile.kernelgateway.root.dist" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root.dist">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="34" />
+            <state relative-caret-position="363">
+              <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dockerfile.notebook" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.notebook">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="51" column="24" lean-forward="false" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dockerfile.kernelgateway.mlp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.mlp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -77,17 +87,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kernel.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/all-spark-notebook/kernel.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kernel.dist.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kernel.dist.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/all-spark-notebook/kernel.dist.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -144,12 +144,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pyspark-notebook/Dockerfile" />
-        <option value="$PROJECT_DIR$/all-spark-notebook/Dockerfile.notebook" />
         <option value="$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway" />
         <option value="$PROJECT_DIR$/all-spark-notebook/Dockerfile.toree" />
         <option value="$PROJECT_DIR$/base-notebook/Dockerfile" />
         <option value="$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root.dist" />
         <option value="$PROJECT_DIR$/all-spark-notebook/kernel.dist.json" />
+        <option value="$PROJECT_DIR$/all-spark-notebook/Dockerfile.notebook" />
       </list>
     </option>
   </component>
@@ -191,11 +191,6 @@
               <item name="docker-stacks" type="b2602c69:ProjectViewProjectNode" />
               <item name="docker-stacks" type="462c0819:PsiDirectoryNode" />
               <item name="all-spark-notebook" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docker-stacks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-stacks" type="462c0819:PsiDirectoryNode" />
-              <item name="base-notebook" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -678,12 +673,12 @@
       <option name="presentableId" value="Default" />
       <updated>1493950732066</updated>
       <workItem from="1502350260428" duration="19246000" />
-      <workItem from="1502696931592" duration="11510000" />
+      <workItem from="1502696931592" duration="13684000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30756000" />
+    <option name="totallyTimeSpent" value="32930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
@@ -779,14 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.notebook">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="20" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.toree">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -815,14 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyspark-notebook/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="32" column="52" lean-forward="false" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -859,18 +838,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/all-spark-notebook/kernel.dist.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.mlp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyspark-notebook/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="52" lean-forward="false" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.notebook">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="51" column="24" lean-forward="false" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
           <folding />
         </state>
       </provider>
