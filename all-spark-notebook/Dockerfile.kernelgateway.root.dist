@@ -54,6 +54,10 @@ COPY kernel.dist.json /opt/conda/share/jupyter/kernels/apache_toree_scala/kernel
 COPY spark /usr/local/spark202
 ENV SPARK_HOME /usr/local/spark202
 
+# Create directory /user-home
+RUN mkdir -p /user-home/
+    chmod -R 777 /user-home/
+
 
 # Spylon-kernel
 # RUN conda install --quiet --yes 'spylon-kernel=0.2*'
