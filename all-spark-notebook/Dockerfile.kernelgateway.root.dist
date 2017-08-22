@@ -47,6 +47,7 @@ RUN conda config --add channels r && \
 COPY "toree-0.2.0.dev1.tar.gz" /tmp/toree-0.2.0.dev1.tar.gz
 RUN pip install /tmp/toree-0.2.0.dev1.tar.gz
 RUN jupyter toree install --sys-prefix
+RUN mkdir -p /opt/conda/share/jupyter/kernels/mokshaspark2.0.2_scala/
 RUN cp -r /opt/conda/share/jupyter/kernels/apache_toree_scala/* /opt/conda/share/jupyter/kernels/mokshaspark2.0.2_scala/
 
 COPY toree-assembly-0.2.0.dev1-incubating-SNAPSHOT.jar /opt/conda/share/jupyter/kernels/mokshaspark2.0.2_scala/lib/
