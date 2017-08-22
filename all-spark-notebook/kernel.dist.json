@@ -12,6 +12,7 @@
         "PYTHONPATH": "/usr/local/spark/python:/usr/local/spark/python/lib/py4j-0.10.4-src.zip",
         "DEFAULT_INTERPRETER": "Scala",
         "SPARK_HOME": "/usr/local/spark202",
+        "IML_HOME": "/user-home",
         "PYTHON_EXEC": "python"
     },
     "display_name": "mokshaspark2.0.2_scala"
