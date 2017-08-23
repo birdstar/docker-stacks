@@ -11,4 +11,6 @@ mkdir spark && mv spark-2.0.2-bin-hadoop2.7/* spark/
 
 docker build -t birdstar/all-spark-notebook-kg:v2.0 -f Dockerfile.kernelgateway.root.dist .
 
+docker save birdstar/all-spark-notebook-kg:v2.0 | gzip -c > /tmp/docker-stacks/kg.tar.gz
+
 
