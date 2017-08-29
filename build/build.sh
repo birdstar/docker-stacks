@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 timestamp=$(date +%Y%m%d.%H%M%S)
+kg_image_tag="2.0"
+kg_image_short_name="kg"
+
 
 mkdir "${ARTIFACT_DIR}"
 
@@ -15,9 +18,9 @@ mkdir spark && mv spark-2.0.2-bin-hadoop2.7/* spark/
 
 docker build -t birdstar/all-spark-notebook-kg:v2.0 -f Dockerfile.kernelgateway.root.dist .
 
-mkdir -p /tmp/docker-stacks/
+mkdir -p docker-stacks/
 
-docker save birdstar/all-spark-notebook-kg:v2.0 | gzip -c > docker-stacks/kg.tar.gz
+docker save birdstar/all-spark-notebook-kg:v2.0 | gzip -c > ${ARTIFACT_DIR}/${kg_image_short_name}_${kg_image_tag}.tar.gz
 
 tar -cvzf ${WORKSPACE}/${REPO}.${MY_VER}-${timestamp}.tgz -o "${REPO}-artifact"
 
