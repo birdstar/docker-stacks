@@ -15,6 +15,8 @@ mkdir spark && mv spark-2.0.2-bin-hadoop2.7/* spark/
 
 docker build -t birdstar/all-spark-notebook-kg:v2.0 -f Dockerfile.kernelgateway.root.dist .
 
+cd ../../
+
 echo "ls ${REPO}-artifact"
 ls ${REPO}-artifact
 echo ${REPO}-artifact
