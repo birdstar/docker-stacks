@@ -5,7 +5,7 @@ kg_image_tag="2.0"
 kg_image_short_name="kg"
 
 
-mkdir "${ARTIFACT_DIR}"
+mkdir -p "${ARTIFACT_DIR}"
 
 cd all-spark-notebook
 
