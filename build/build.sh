@@ -20,6 +20,15 @@ docker build -t birdstar/all-spark-notebook-kg:v2.0 -f Dockerfile.kernelgateway.
 
 mkdir -p docker-stacks/
 
+echo "ls ${REPO}-artifact"
+ls ${REPO}-artifact
+echo ${REPO}-artifact
+
+echo "ls ${ARTIFACT_DIR}"
+ls ${ARTIFACT_DIR}
+echo ${ARTIFACT_DIR}
+
+
 docker save birdstar/all-spark-notebook-kg:v2.0 | gzip -c > ${ARTIFACT_DIR}/${kg_image_short_name}_${kg_image_tag}.tar.gz
 
 tar -cvzf ${WORKSPACE}/${REPO}.${MY_VER}-${timestamp}.tgz -o "${REPO}-artifact"
