@@ -32,7 +32,7 @@ echo ${ARTIFACT_DIR}
 #docker save birdstar/all-spark-notebook-kg:v2.0 | gzip -c > ${REPO}-artifact/${kg_image_short_name}_${kg_image_tag}.tar.gz
 docker save birdstar/all-spark-notebook-kg:v2.0 | gzip -c > /tmp/${PROJECT_NAME}/${kg_image_short_name}_${kg_image_tag}.tar.gz
 
-tar -cvzf ${WORKSPACE}/${REPO}.${kg_image_tag}-${timestamp}.tgz -o "${REPO}-artifact"
+#tar -cvzf ${WORKSPACE}/${REPO}.${kg_image_tag}-${timestamp}.tgz -o "${REPO}-artifact"
 
 
 
