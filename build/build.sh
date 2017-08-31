@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 timestamp=$(date +%Y%m%d.%H%M%S)
-kg_image_tag="2.0"
+kg_image_tag="v2.0"
 kg_image_short_name="kg"
 
 mkdir -p /tmp/docker-stacks
