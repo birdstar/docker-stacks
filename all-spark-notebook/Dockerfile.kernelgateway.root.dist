@@ -53,7 +53,7 @@ RUN cp -r /opt/conda/share/jupyter/kernels/apache_toree_scala/* /opt/conda/share
 COPY toree-assembly-0.2.0.dev1-incubating-SNAPSHOT.jar /opt/conda/share/jupyter/kernels/imlspark2.1.1_scala/lib/
 COPY kernel.dist.json /opt/conda/share/jupyter/kernels/imlspark2.1.1_scala/kernel.json
 
-RUN rm -rf /opt/conda/share/jupyter/kernels/apache_toree_scala/*
+RUN cp /dev/null /opt/conda/share/jupyter/kernels/apache_toree_scala/kernel.json
 
 # Replace spark to 2.1.1
 COPY spark /usr/local/spark211
