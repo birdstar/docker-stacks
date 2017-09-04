@@ -22,6 +22,7 @@ cp /opt/dependencies/spark-2.1.1-bin-hadoop2.7.tgz .
 
 tar -zxvf spark-2.1.1-bin-hadoop2.7.tgz
 
+#mkdir spark && mv spark-2.1.1-bin-hadoop2.7/* spark/
 mkdir spark && mv spark-dk-2.1.1.0/spark/* spark/
 
 docker build -t ${kg_image_name} -f Dockerfile.kernelgateway.root.dist .
