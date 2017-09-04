@@ -11,9 +11,9 @@
         "SPARK_OPTS": "--master spark://spark-master-svc:7077 --driver-memory 1g --num-executors 1 --executor-memory 1g --executor-cores 1  --conf spark.mesos.coarse=false --conf spark.executor.extraClassPath=/user-home/iml-library/library/* --conf spark.driver.extraClassPath=/user-home/iml-library/library/*",
         "PYTHONPATH": "/usr/local/spark/python:/usr/local/spark/python/lib/py4j-0.10.4-src.zip",
         "DEFAULT_INTERPRETER": "Scala",
-        "SPARK_HOME": "/usr/local/spark202",
+        "SPARK_HOME": "/usr/local/spark211",
         "IML_HOME": "/user-home",
         "PYTHON_EXEC": "python"
     },
-    "display_name": "mokshaspark2.0.2_scala"
+    "display_name": "imlspark2.1.1_scala"
 }
