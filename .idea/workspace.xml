@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8639ad57-8028-482c-b58a-81ee6d544e3c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/all-spark-notebook/projectnb-0.1.30_python2.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/all-spark-notebook/projectnb-0.1.30_python3.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root.dist" afterPath="$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root.dist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/build.sh" afterPath="$PROJECT_DIR$/build/build.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Dockerfile.kernelgateway.root.dist" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dockerfile.kernelgateway.root.dist" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root.dist">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="239">
@@ -29,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="build.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build/build.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="26" />
+            <state relative-caret-position="148">
+              <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -149,10 +147,10 @@
       <find>spark202`</find>
       <find>mokshaspark2.0.2_scala</find>
       <find>moksha</find>
-      <find>tar.gz</find>
       <find>cuericlee/all-spark-notebook-livy-tensorflow-xgboost</find>
       <find>spark202</find>
       <find>python</find>
+      <find>tar.gz</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,8 +172,8 @@
         <option value="$PROJECT_DIR$/How_To_Build_KG.md" />
         <option value="$PROJECT_DIR$/all-spark-notebook/kernel.dist.json" />
         <option value="$PROJECT_DIR$/all-spark-notebook/Dockerfile.notebook" />
-        <option value="$PROJECT_DIR$/build/build.sh" />
         <option value="$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root.dist" />
+        <option value="$PROJECT_DIR$/build/build.sh" />
       </list>
     </option>
   </component>
@@ -732,12 +730,12 @@
       <workItem from="1504686487228" duration="584000" />
       <workItem from="1504690598420" duration="427000" />
       <workItem from="1504752873492" duration="3616000" />
-      <workItem from="1504853938153" duration="253000" />
+      <workItem from="1504853938153" duration="555000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95905000" />
+    <option name="totallyTimeSpent" value="96207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
@@ -1182,18 +1180,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/build.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root.dist">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
           <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/build.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="35" />
           <folding />
         </state>
       </provider>
