@@ -79,6 +79,9 @@ RUN pip2 install /tmp/projectnb-0.1.30_python2.zip
 COPY "projectnb-0.1.30_python3.zip" /tmp/projectnb-0.1.30_python3.zip
 RUN pip3 install /tmp/projectnb-0.1.30_python3.zip
 
+RUN pip2 install pycrypto
+RUN pip2 install py4j
+
 
 
 ## Add spark magic kernel to kg for livy support
