@@ -96,6 +96,14 @@ COPY "projectnb-0.1.30_python3.zip" /tmp/projectnb-0.1.30_python3.zip
 RUN pip3 install /tmp/projectnb-0.1.30_python3.zip
 
 
+# install repository package
+COPY "repository-0.1.152.post201704261126_python2.zip" /tmp/repository-0.1.152.post201704261126_python2.zip
+RUN pip2 install /tmp/repository-0.1.152.post201704261126_python2.zip
+
+COPY "repository-0.1.152.post201704261126_python3.zip" /tmp/repository-0.1.152.post201704261126_python3.zip
+RUN pip2 install /tmp/repository-0.1.152.post201704261126_python3.zip
+
+
 
 
 ## Add spark magic kernel to kg for livy support
