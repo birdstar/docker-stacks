@@ -72,6 +72,22 @@ RUN mkdir -p /user-home/ \
 RUN pip install jupyter_kernel_gateway==1.1.2
 #RUN conda install -c conda-forge jupyter_kernel_gateway
 
+
+# Install dependency pacakges
+RUN pip2 install pycrypto
+RUN pip3 install pycrypto
+
+RUN pip2 install certifi
+RUN pip3 install certifi
+
+RUN pip2 install urllib3
+RUN pip3 install urllib3
+
+RUN pip2 install aniso8601
+RUN pip3 install aniso8601
+
+
+
 # install projectnb package
 COPY "projectnb-0.1.30_python2.zip" /tmp/projectnb-0.1.30_python2.zip
 RUN pip2 install /tmp/projectnb-0.1.30_python2.zip
@@ -79,8 +95,8 @@ RUN pip2 install /tmp/projectnb-0.1.30_python2.zip
 COPY "projectnb-0.1.30_python3.zip" /tmp/projectnb-0.1.30_python3.zip
 RUN pip3 install /tmp/projectnb-0.1.30_python3.zip
 
-RUN pip2 install pycrypto
-RUN pip3 install pycrypto
+
+
 
 ## Add spark magic kernel to kg for livy support
 # RUN pip install sparkmagic
