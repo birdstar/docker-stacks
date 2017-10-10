@@ -24,8 +24,8 @@
       <file leaf-file-name="Dockerfile.kernelgateway.root.dist" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root.dist">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="122" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+            <state relative-caret-position="183">
+              <caret line="17" column="31" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="17" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -34,8 +34,8 @@
       <file leaf-file-name="Dockerfile.kernelgateway.root.min" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root.min">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+            <state relative-caret-position="266">
+              <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -147,6 +147,7 @@
       <find>tar.gz</find>
       <find>liv</find>
       <find>user-home</find>
+      <find>gcc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1088,14 +1089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="122" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/minimal-notebook/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
@@ -1136,10 +1129,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="17" column="31" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="17" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root.min">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+        <state relative-caret-position="266">
+          <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
           <folding />
         </state>
       </provider>
