@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 timestamp=$(date +%Y%m%d.%H%M%S)
-kg_image_tag="v2.0"
+kg_image_tag="v2.1"
 kg_image_short_name="kg"
 
 mkdir -p /tmp/docker-stacks
@@ -18,14 +18,17 @@ kg_image_name="${local_docker_server}/all-spark-notebook-kg:${kg_image_tag}"
 cd all-spark-notebook
 
 #wget https://d3kbcqa49mib13.cloudfront.net/spark-2.0.2-bin-hadoop2.7.tgz
-cp /opt/dependencies/spark-2.1.1-bin-hadoop2.7.tgz .
 
-tar -zxvf spark-2.1.1-bin-hadoop2.7.tgz
+##### no need spark in livy version #####
+#cp /opt/dependencies/spark-2.1.1-bin-hadoop2.7.tgz .
 
-mkdir spark && mv spark-2.1.1-bin-hadoop2.7/* spark/
+#tar -zxvf spark-2.1.1-bin-hadoop2.7.tgz
+
+#mkdir spark && mv spark-2.1.1-bin-hadoop2.7/* spark/
+##### no need spark in livy version end#####
 #mkdir spark && mv spark-dk-2.1.1.0/spark/* spark/
 
-docker build -t ${kg_image_name} -f Dockerfile.kernelgateway.root.dist .
+docker build -t ${kg_image_name} -f Dockerfile.kernelgateway.root.min .
 
 cd ../
 
