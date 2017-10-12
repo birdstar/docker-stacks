@@ -1,0 +1,53 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: kg-deploy
+  labels:
+    app: kg
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kg
+  template:
+    metadata:
+      labels:
+        app: kg
+    spec:
+      containers:
+        - name: kg
+          image: localhost:5000/all-spark-notebook-kg:v2.1
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              cpu: "4"
+              memory: "18Gi"
+          env:
+          - name: KG_BASE_URL
+            value: "/jupyter/v1/"
+          - name: IML_HOME
+            value: "/user-home"
+          - name: IML_HOME_LIBRARY
+            value: "/user-home/iml-library/library/*"
+          - name: KG_MAX_KERNELS
+            value: "12"
+          ports:
+            - containerPort: 9999
+          volumeMounts:
+            - mountPath: /home/jovyan/.sparkmagic
+              name: user-sparkmagic-mount
+      volumes:
+        # for user-home-mount, we directly mount it instead of claiming it.
+        # it insulates you from different types of volumes - i.e. - wanted
+        # to make sure you were bound directly to the user-home volume and
+        # not end up claiming some other volume by chance
+        # i.e. - the  pvc -> pv  relation is a bit complicated -
+        # unless you have a matchLabel - k8s can assign you any available
+        # Persistent volume.  did not want to take that chance here
+        - name: user-sparkmagic-mount
+          glusterfs:
+            endpoints: glusterfs-cluster
+            path: user-home/buildinspark/.sparkmagic
+
+
+
