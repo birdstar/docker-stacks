@@ -45,7 +45,7 @@ spec:
         # unless you have a matchLabel - k8s can assign you any available
         # Persistent volume.  did not want to take that chance here
         - name: user-sparkmagic-mount
-          hostpath:
+          hostPath:
             path: /iml/user-home/buildinspark/.sparkmagic
 
 
