@@ -120,6 +120,8 @@ RUN jupyter-kernelspec install /opt/conda/lib/python3.5/site-packages/sparkmagic
 ## disable python3
 RUN cp /dev/null /opt/conda/share/jupyter/kernels/python3/kernel.json
 
+## make sure the runtime folder exists
+RUN mkdir -p /home/jovyan/.local/share/jupyter/runtime
 
 # run kernel gateway on container start, not notebook server
 EXPOSE 9999

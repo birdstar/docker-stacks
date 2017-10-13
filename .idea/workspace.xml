@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8639ad57-8028-482c-b58a-81ee6d544e3c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root.min" afterPath="$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root.min" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/k8s/kg-deployment.yaml" afterPath="$PROJECT_DIR$/k8s/kg-deployment.yaml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,8 +51,8 @@
       <file leaf-file-name="Dockerfile.kernelgateway.root.min" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root.min">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="125" column="45" lean-forward="false" selection-start-line="125" selection-start-column="45" selection-end-line="125" selection-end-column="45" />
+            <state relative-caret-position="280">
+              <caret line="122" column="38" lean-forward="false" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -105,8 +106,8 @@
       <file leaf-file-name="kg-deployment.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/k8s/kg-deployment.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            <state relative-caret-position="432">
+              <caret line="53" column="45" lean-forward="false" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -178,8 +179,8 @@
         <option value="$PROJECT_DIR$/build/build.sh" />
         <option value="$PROJECT_DIR$/k8s/create.sh" />
         <option value="$PROJECT_DIR$/k8s/delete.sh" />
-        <option value="$PROJECT_DIR$/k8s/kg-deployment.yaml" />
         <option value="$PROJECT_DIR$/k8s/kg-svc.yaml" />
+        <option value="$PROJECT_DIR$/k8s/kg-deployment.yaml" />
         <option value="$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root.min" />
       </list>
     </option>
@@ -1118,14 +1119,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/k8s/kg-deployment.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/k8s/kg-svc.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1134,10 +1127,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/k8s/kg-deployment.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="53" column="45" lean-forward="false" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root.min">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="125" column="45" lean-forward="false" selection-start-line="125" selection-start-column="45" selection-end-line="125" selection-end-column="45" />
+        <state relative-caret-position="280">
+          <caret line="122" column="38" lean-forward="false" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="38" />
           <folding />
         </state>
       </provider>
