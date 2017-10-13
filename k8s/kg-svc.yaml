@@ -5,6 +5,7 @@ metadata:
   labels:
     app: kg
 spec:
+  sessionAffinity: ClientIP
   ports:
     - port: 9999
       targetPort: 9999
