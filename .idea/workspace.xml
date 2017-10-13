@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8639ad57-8028-482c-b58a-81ee6d544e3c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/k8s/kg-deployment.yaml" afterPath="$PROJECT_DIR$/k8s/kg-deployment.yaml" />
-    </list>
+    <list default="true" id="8639ad57-8028-482c-b58a-81ee6d544e3c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kg-svc.yaml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="kg-svc.yaml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/k8s/kg-svc.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -102,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kg-deployment.yaml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kg-deployment.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/k8s/kg-deployment.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="47" column="15" lean-forward="false" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="15" />
+              <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -179,8 +177,8 @@
         <option value="$PROJECT_DIR$/build/build.sh" />
         <option value="$PROJECT_DIR$/k8s/create.sh" />
         <option value="$PROJECT_DIR$/k8s/delete.sh" />
-        <option value="$PROJECT_DIR$/k8s/kg-svc.yaml" />
         <option value="$PROJECT_DIR$/k8s/kg-deployment.yaml" />
+        <option value="$PROJECT_DIR$/k8s/kg-svc.yaml" />
       </list>
     </option>
   </component>
@@ -1102,14 +1100,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/k8s/kg-svc.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/all-spark-notebook/Dockerfile.kernelgateway.root">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -1137,7 +1127,15 @@
     <entry file="file://$PROJECT_DIR$/k8s/kg-deployment.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="47" column="15" lean-forward="false" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="15" />
+          <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/k8s/kg-svc.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding />
         </state>
       </provider>
