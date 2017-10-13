@@ -28,6 +28,9 @@ RUN REPO=http://cdn-fastly.deb.debian.org \
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     gcc \
+    vim \
+    curl \
+    net-tools \
     libkrb5-dev && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -120,7 +123,7 @@ RUN cp /dev/null /opt/conda/share/jupyter/kernels/python3/kernel.json
 
 # run kernel gateway on container start, not notebook server
 EXPOSE 9999
-CMD ["jupyter", "kernelgateway", "--KernelGatewayApp.ip=0.0.0.0", "--KernelGatewayApp.port=9999", "--JupyterWebsocketPersonality.list_kernels=True"]
+CMD ["jupyter", "kernelgateway", "--debug", ""--KernelGatewayApp.ip=0.0.0.0", "--KernelGatewayApp.port=9999", "--JupyterWebsocketPersonality.list_kernels=True"]
 
 ##################### add kg support end #####################
 
