@@ -13,6 +13,8 @@ k8sdir=`dirname ${0}`
 NAMESPACE=${1:-ibmdsxuser-re000001}
 #VIRTUAL_IP=$2
 
+k8s_create_namespace ${NAMESPACE} 
+
 #sed -i "s/MLVIP/${VIRTUAL_IP}/g" ${k8sdir}/spark-master-svc.yaml
 
 # exit if any statement returns non-zero return value (e.g. error)
