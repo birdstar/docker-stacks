@@ -10,7 +10,7 @@ k8sdir=`dirname ${0}`
 
 # use passed in namespace.   if there is none, use default ibm-private-cloud
 # to create all spark components
-NAMESPACE=${1:-ibm-private-cloud}
+NAMESPACE=${1:-ibmdsxuser-re000001}
 #VIRTUAL_IP=$2
 
 #sed -i "s/MLVIP/${VIRTUAL_IP}/g" ${k8sdir}/spark-master-svc.yaml

@@ -48,10 +48,10 @@ spec:
         # Persistent volume.  did not want to take that chance here
         - name: user-sparkmagic-mount
           hostPath:
-            path: /iml/user-home/buildinspark/.sparkmagic
+            path: /iml/user-home/magic/re000001/.sparkmagic
         - name: user-kernel-runtime
           hostPath:
-            path: /iml/user-home/buildinspark/runtime
+            path: /iml/user-home/magic/re000001/runtime
 
 
 

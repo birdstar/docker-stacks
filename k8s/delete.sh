@@ -10,7 +10,7 @@ k8sdir=`dirname ${0}`
 
 # use passed in namespace.   if there is none, use default ibm-private-cloud
 # to create all spark components
-NAMESPACE=${1:-ibm-private-cloud}
+NAMESPACE=${1:-ibmdsxuser-re000001}
 
 
 k8s_delete ${NAMESPACE} ${k8sdir}/kg-svc.yaml
