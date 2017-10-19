@@ -117,11 +117,15 @@ RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
 RUN jupyter-kernelspec install /opt/conda/lib/python3.5/site-packages/sparkmagic/kernels/sparkkernel —name livy-scala
 # RUN jupyter-kernelspec install /opt/conda/lib/python3.5/site-packages/sparkmagic/kernels/pysparkkernel —name livy-pyspark
 
-RUN mkdir -p /usr/local/share/jupyter/kernels/sparkkernel/
-COPY kernel.min.livy.json /usr/local/share/jupyter/kernels/sparkkernel/kernel.json
 
-## disable python3
+RUN mkdir -p /usr/local/share/jupyter/kernels/imlspark2.1.1_scala/
+RUN cp -r /usr/local/share/jupyter/kernels/sparkkernel/* /usr/local/share/jupyter/kernels/imlspark2.1.1_scala/
+
+COPY kernel.min.livy.json /usr/local/share/jupyter/kernels/imlspark2.1.1_scala/kernel.json
+
+## disable python3 and sparkkernel
 RUN cp /dev/null /opt/conda/share/jupyter/kernels/python3/kernel.json
+RUN cp /dev/null /usr/local/share/jupyter/kernels/sparkkernel/kernel.json
 
 ## make sure the runtime folder exists
 RUN mkdir -p /home/jovyan/.local/share/jupyter/runtime
