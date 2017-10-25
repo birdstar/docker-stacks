@@ -19,9 +19,12 @@ spec:
           image: localhost:5000/all-spark-notebook-kg:v2.1
           imagePullPolicy: IfNotPresent
           resources:
+            requests:
+              cpu: "0.5"
+              memory: "1Gi"
             limits:
-              cpu: "4"
-              memory: "18Gi"
+              cpu: "1"
+              memory: "2Gi"
           env:
           - name: KG_BASE_URL
             value: "/jupyter/v1/"
