@@ -50,7 +50,10 @@
 
   "session_configs": {
     "driverMemory": "1000M",
-    "executorCores": 2
+    "executorCores": 1,
+    "executorMemory": "1000M",
+    "conf": {"spark.executorEnv.IML_HOME": "/user-home", "spark.executor.extraClassPath":"/user-home/iml-library/library/*",
+      "spark.driver.extraClassPath":"/user-home/iml-library/library/*"}
   },
 
   "use_auto_viz": true,
