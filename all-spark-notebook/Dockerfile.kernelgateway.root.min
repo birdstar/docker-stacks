@@ -84,8 +84,6 @@ RUN conda install --quiet --yes \
     'jupyterlab=0.18.*' \
     && conda clean -tipsy
 
-RUN pip install --upgrade pip
-
 USER root
 
 # EXPOSE 8888
