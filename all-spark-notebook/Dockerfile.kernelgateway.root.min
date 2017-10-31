@@ -110,7 +110,7 @@ RUN mkdir -p /user-home/ \
 RUN pip install jupyter_kernel_gateway==1.1.2
 #RUN conda install -c conda-forge jupyter_kernel_gateway
 
-RUN sudo chown -R $NB_USER /home/jovyan/.cache/pip
+RUN chmod -R 777 /home/jovyan
 
 ## Add spark magic kernel to kg for livy support
 RUN pip install sparkmagic
