@@ -100,8 +100,6 @@ ENTRYPOINT ["tini", "--"]
 # COPY scripts/jupyter_notebook_config.py /home/$NB_USER/.jupyter/
 RUN chown -R $NB_USER:users /home/$NB_USER/.jupyter
 
-RUN sudo chown -R $NB_USER /home/jovyan/.cache/pip
-
 ##################### add kg support #####################
 
 # Create directory /user-home
@@ -112,6 +110,7 @@ RUN mkdir -p /user-home/ \
 RUN pip install jupyter_kernel_gateway==1.1.2
 #RUN conda install -c conda-forge jupyter_kernel_gateway
 
+RUN sudo chown -R $NB_USER /home/jovyan/.cache/pip
 
 ## Add spark magic kernel to kg for livy support
 RUN pip install sparkmagic
