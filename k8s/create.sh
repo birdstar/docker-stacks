@@ -20,6 +20,10 @@ k8s_create_namespace ${NAMESPACE}
 # exit if any statement returns non-zero return value (e.g. error)
 #set -e
 
+mkdir -p /iml/user-home/magic/re000001/.sparkmagic
+mkdir -p /iml/user-home/magic/re000001/runtime
+chmod -R 777 /iml/user-home/magic
+cp ${k8sdir}/config.json /iml/user-home/magic/re000001/.sparkmagic/ 
 
 #k8s_create "" ${k8sdir}/spark-metrics-pv.yaml
 #k8s_create ${NAMESPACE} ${k8sdir}/spark-metrics-pvc.yaml
