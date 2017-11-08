@@ -131,11 +131,6 @@ RUN cp /dev/null /usr/local/share/jupyter/kernels/sparkkernel/kernel.json
 ## make sure the runtime folder exists
 RUN mkdir -p /home/jovyan/.local/share/jupyter/runtime
 
-## Add toree for its magics
-COPY "toree-0.2.0.dev1.tar.gz" /tmp/toree-0.2.0.dev1.tar.gz
-RUN pip install /tmp/toree-0.2.0.dev1.tar.gz
-RUN jupyter toree install --sys-prefix
-
 
 # run kernel gateway on container start, not notebook server
 EXPOSE 9999
